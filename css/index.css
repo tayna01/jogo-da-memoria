@@ -1,0 +1,64 @@
+body{
+	background: linear-gradient(135deg, #94568d, #800080);
+	min-height: 100vh;
+	margin: 0;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	font-family: Arial;
+}
+
+header{
+	border: 1px solid #a9a6a6;
+	border-radius: 10px 30px;
+	background: #fff;
+	padding: 10px 30px;
+	margin: 20px;
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	align-items: center;
+}
+
+button{
+	border: none;
+	cursor: pointer;
+	background: #94568d;
+	font-weight: bold;
+	padding: 10px 20px;
+	border-radius: 5px;
+	color: #fff;
+	transition: all .2s ease-in-out;
+	letter-spacing: 2px;
+}
+
+button:hover{
+	background: #800080;
+	box-shadow: 0 4px 8px #94568d;
+}
+
+.board{
+	display: grid;
+	grid-template-columns: repeat(3, 120px);
+	gap: 20px;
+}
+
+.card{
+	height: 80px;
+}
+
+.card.selecionado{
+	background: #800080;
+}
+
+.cinza{
+	color: #333030;
+}
+
+.negrito{
+	font-weight: bold;
+}
+
+.espacamento{
+	letter-spacing: 3px;
+}
